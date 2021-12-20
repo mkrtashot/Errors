@@ -1,6 +1,6 @@
 Required Tasks
 
-Task 1
+**Task 1**
 
 Complete the reverseString function, it has one parameters. You must perform the following actions:
 
@@ -30,3 +30,18 @@ s.split is not a function
 ```
 
 Here is the [solution](1.reverse_string.js)
+
+---
+
+**Task 2**
+
+Complete the isPositive function below. It has one integer parameter a
+
+If the value of a is positive, it must return the string YES. Otherwise, it must throw an Error according to the following rules:
+
+- If a is 0, throw an Error with message = Zero Error.
+- If a is negative, throw an Error with message = Negative Error.
+
+Here is the [solution](2.is_positive.js)
+
+---
