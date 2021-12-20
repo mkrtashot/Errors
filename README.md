@@ -62,3 +62,46 @@ console.log(s);
 Here is the[solution](3.convert_reverse.js)
 
 ---
+
+**_Task 4_**
+
+A teacher has created a gradeLabs function that verifies if student programming labs work. This function
+loops over an array of JavaScript objects that should contain a student property and runLab property.
+The runLab property is expected to be a function containing the student's code. The runLab function is
+called and the result is compared to the expected result. If the result and expected results don't match,
+then the lab is considered a failure.
+
+[gradeLabs](https://replit.com/@XAEA12/ExceptionHandler#index.js)
+
+The gradeLabs function works for the majority of cases. However, what happens if a student named their
+function incorrectly? Run gradeLabs and pass it studentLabs2 as defined below.
+
+```
+let studentLabs2 = [
+{
+student: "Blake",
+myCode: function (num) {
+return Math.pow(num, num);
+},
+},
+{
+student: "Jessica",
+runLab: function (num) {
+return Math.pow(num, num);
+},
+},
+{
+student: "Mya",
+runLab: function (num) {
+return num * num;
+},
+},
+];
+gradeLabs(studentLabs2);
+```
+
+Upon running the second example, the teacher gets TypeError: lab.runLab is not a function.
+Add a try/catch block inside of gradeLabs to catch an exception if the runLab property is not defined.
+If the exception is thrown, the result should be set to the text "Error thrown".
+
+Here is the [solution](4.teacher.js)
