@@ -45,3 +45,20 @@ If the value of a is positive, it must return the string YES. Otherwise, it must
 Here is the [solution](2.is_positive.js)
 
 ---
+
+**_Task 3_**
+
+Convert the code using try...catch.
+
+```
+function reverseString(s) {
+typeof s !== "string"
+? console.log("s.split is not a function")
+: (s = s.split("").reverse().join(""));
+console.log(s);
+}
+```
+
+Here is the[solution](3.convert_reverse.js)
+
+---
